@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		3476B4891E0478E1003D63FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476B4881E0478E1003D63FC /* main.m */; };
 		3476B48C1E0478E1003D63FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476B48B1E0478E1003D63FC /* AppDelegate.m */; };
-		3476B48F1E0478E1003D63FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476B48E1E0478E1003D63FC /* ViewController.m */; };
-		3476B4921E0478E1003D63FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3476B4901E0478E1003D63FC /* Main.storyboard */; };
 		3476B4941E0478E1003D63FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3476B4931E0478E1003D63FC /* Assets.xcassets */; };
 		3476B4971E0478E1003D63FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3476B4951E0478E1003D63FC /* LaunchScreen.storyboard */; };
 		3476B4A21E0478E1003D63FC /* MyThemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476B4A11E0478E1003D63FC /* MyThemeTests.m */; };
 		3476B4AD1E0478E1003D63FC /* MyThemeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476B4AC1E0478E1003D63FC /* MyThemeUITests.m */; };
+		3476B4BF1E04798F003D63FC /* constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476B4BE1E04798F003D63FC /* constant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +38,6 @@
 		3476B4881E0478E1003D63FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3476B48A1E0478E1003D63FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3476B48B1E0478E1003D63FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3476B48D1E0478E1003D63FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3476B48E1E0478E1003D63FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3476B4911E0478E1003D63FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3476B4931E0478E1003D63FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3476B4961E0478E1003D63FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3476B4981E0478E1003D63FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +47,9 @@
 		3476B4A81E0478E1003D63FC /* MyThemeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyThemeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3476B4AC1E0478E1003D63FC /* MyThemeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyThemeUITests.m; sourceTree = "<group>"; };
 		3476B4AE1E0478E1003D63FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3476B4BA1E04793B003D63FC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3476B4BD1E04798F003D63FC /* constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constant.h; sourceTree = "<group>"; };
+		3476B4BE1E04798F003D63FC /* constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +100,13 @@
 		3476B4861E0478E0003D63FC /* MyTheme */ = {
 			isa = PBXGroup;
 			children = (
-				3476B48A1E0478E1003D63FC /* AppDelegate.h */,
-				3476B48B1E0478E1003D63FC /* AppDelegate.m */,
-				3476B48D1E0478E1003D63FC /* ViewController.h */,
-				3476B48E1E0478E1003D63FC /* ViewController.m */,
-				3476B4901E0478E1003D63FC /* Main.storyboard */,
+				3476B4BC1E04796D003D63FC /* constant */,
+				3476B4BB1E04794E003D63FC /* APPDelegate */,
 				3476B4931E0478E1003D63FC /* Assets.xcassets */,
 				3476B4951E0478E1003D63FC /* LaunchScreen.storyboard */,
 				3476B4981E0478E1003D63FC /* Info.plist */,
 				3476B4871E0478E1003D63FC /* Supporting Files */,
+				3476B4BA1E04793B003D63FC /* PrefixHeader.pch */,
 			);
 			path = MyTheme;
 			sourceTree = "<group>";
@@ -138,6 +135,24 @@
 				3476B4AE1E0478E1003D63FC /* Info.plist */,
 			);
 			path = MyThemeUITests;
+			sourceTree = "<group>";
+		};
+		3476B4BB1E04794E003D63FC /* APPDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3476B48A1E0478E1003D63FC /* AppDelegate.h */,
+				3476B48B1E0478E1003D63FC /* AppDelegate.m */,
+			);
+			name = APPDelegate;
+			sourceTree = "<group>";
+		};
+		3476B4BC1E04796D003D63FC /* constant */ = {
+			isa = PBXGroup;
+			children = (
+				3476B4BD1E04798F003D63FC /* constant.h */,
+				3476B4BE1E04798F003D63FC /* constant.m */,
+			);
+			name = constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +222,7 @@
 				TargetAttributes = {
 					3476B4831E0478E0003D63FC = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9R8R6F698E;
 					};
 					3476B49C1E0478E1003D63FC = {
 						CreatedOnToolsVersion = 7.3;
@@ -245,7 +261,6 @@
 			files = (
 				3476B4971E0478E1003D63FC /* LaunchScreen.storyboard in Resources */,
 				3476B4941E0478E1003D63FC /* Assets.xcassets in Resources */,
-				3476B4921E0478E1003D63FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3476B48F1E0478E1003D63FC /* ViewController.m in Sources */,
+				3476B4BF1E04798F003D63FC /* constant.m in Sources */,
 				3476B48C1E0478E1003D63FC /* AppDelegate.m in Sources */,
 				3476B4891E0478E1003D63FC /* main.m in Sources */,
 			);
@@ -308,14 +323,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3476B4901E0478E1003D63FC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3476B4911E0478E1003D63FC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3476B4951E0478E1003D63FC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -415,10 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyTheme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fangchuyu.MyTheme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyTheme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fangchuyu.MyTheme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
