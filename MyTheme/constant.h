@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  constant.h
 //  MyTheme
 //
 //  Created by 放爷小MAC on 16/12/17.
 //  Copyright © 2016年 放爷小MAC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
+@interface constant : NSObject
 
 @end
-
