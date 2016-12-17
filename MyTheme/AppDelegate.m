@@ -1,5 +1,4 @@
-//
-//  AppDelegate.m
+//【//  AppDelegate.m
 //  MyTheme
 //
 //  Created by 放爷小MAC on 16/12/17.
@@ -7,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "HomeViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +16,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -30) forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIColor blackColor]}];
+    [UINavigationBar appearance].tintColor = [UIColor blackColor];
+    
+//    设置window
+    _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    _window.backgroundColor = [UIColor whiteColor];
+    [_window makeKeyAndVisible];
+    HomeViewController *mainVC = [[HomeViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:mainVC];
+    _window.rootViewController = nav;
+    
     return YES;
 }
 

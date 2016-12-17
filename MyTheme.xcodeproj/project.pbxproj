@@ -14,6 +14,7 @@
 		3476B4A21E0478E1003D63FC /* MyThemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476B4A11E0478E1003D63FC /* MyThemeTests.m */; };
 		3476B4AD1E0478E1003D63FC /* MyThemeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476B4AC1E0478E1003D63FC /* MyThemeUITests.m */; };
 		3476B4BF1E04798F003D63FC /* constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476B4BE1E04798F003D63FC /* constant.m */; };
+		3490FDE11E04C2D0009AE8AC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3490FDE01E04C2D0009AE8AC /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		3476B4BA1E04793B003D63FC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		3476B4BD1E04798F003D63FC /* constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constant.h; sourceTree = "<group>"; };
 		3476B4BE1E04798F003D63FC /* constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constant.m; sourceTree = "<group>"; };
+		3490FDDF1E04C2D0009AE8AC /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		3490FDE01E04C2D0009AE8AC /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,7 @@
 		3476B4861E0478E0003D63FC /* MyTheme */ = {
 			isa = PBXGroup;
 			children = (
+				3490FDDE1E04C2B3009AE8AC /* Controller */,
 				3476B4BC1E04796D003D63FC /* constant */,
 				3476B4BB1E04794E003D63FC /* APPDelegate */,
 				3476B4931E0478E1003D63FC /* Assets.xcassets */,
@@ -153,6 +157,15 @@
 				3476B4BE1E04798F003D63FC /* constant.m */,
 			);
 			name = constant;
+			sourceTree = "<group>";
+		};
+		3490FDDE1E04C2B3009AE8AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3490FDDF1E04C2D0009AE8AC /* HomeViewController.h */,
+				3490FDE01E04C2D0009AE8AC /* HomeViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +301,7 @@
 				3476B4BF1E04798F003D63FC /* constant.m in Sources */,
 				3476B48C1E0478E1003D63FC /* AppDelegate.m in Sources */,
 				3476B4891E0478E1003D63FC /* main.m in Sources */,
+				3490FDE11E04C2D0009AE8AC /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +525,7 @@
 				3476B4B31E0478E1003D63FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3476B4B41E0478E1003D63FC /* Build configuration list for PBXNativeTarget "MyThemeTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +534,7 @@
 				3476B4B61E0478E1003D63FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3476B4B71E0478E1003D63FC /* Build configuration list for PBXNativeTarget "MyThemeUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +543,7 @@
 				3476B4B91E0478E1003D63FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
