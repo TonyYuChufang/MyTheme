@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface constant : NSObject
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREEM_HEIGHT [UIScreen mainScreen].bounds.size.height
 
-@end
+extern CGFloat const rightMenuWith;
+
+extern UIFont * const normalFont;

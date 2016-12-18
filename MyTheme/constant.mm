@@ -7,7 +7,7 @@
 //
 
 #import "constant.h"
+#
+CGFloat const rightMenuWith = SCREEN_WIDTH/2;
 
-@implementation constant
-
-@end
+UIFont * const normalFont = [UIFont systemFontOfSize:14];
