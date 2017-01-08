@@ -7,6 +7,8 @@
 //
 
 #import "rightMenuView.h"
+#import "avaterCell.h"
+#import "normalCell.h"
 
 @implementation rightMenuView
 {
@@ -35,11 +37,20 @@
     self.layer.shadowOpacity = 0.5;
     
     _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, selfWidth, selfHeight)];
-    _tableView.tableFooterView = [UIView new];
+    [_tableView registerClass:[avaterCell class] forCellReuseIdentifier:@"avaterCell"];
+    [_tableView registerClass:[normalCell class] forCellReuseIdentifier:@"normalCell"];
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    _tableView.tableFooterView = [UIView new];
     [self addSubview:_tableView];
     
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(indexPath.row == 0){
+        return 180;
+    }else{
+        return 44;
+    }
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -49,6 +60,15 @@
     return _dataSourcet.count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    if(indexPath.row == 0){
+        avaterCell *cell = [tableView dequeueReusableCellWithIdentifier:@"avaterCell" forIndexPath:indexPath];
+        cell.nameLabel.text = _dataSourcet[indexPath.row];
+        return cell;
+    }else{
+        normalCell *cell = [tableView dequeueReusableCellWithIdentifier:@"normalCell" forIndexPath:indexPath];
+        cell.iconImage.image = [[UIImage imageNamed:[NSString stringWithFormat:@"normal%ld",indexPath.row]] imageWithColor:[UIColor grayColor]];
+        cell.titleLabel.text = _dataSourcet   [indexPath.row];
+        return cell;
+    }
 }
 @end

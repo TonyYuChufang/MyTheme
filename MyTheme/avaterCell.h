@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewCell : UITableViewCell
+@interface avaterCell : UITableViewCell
 @property (nonatomic,strong)UIImageView *avater;
 @property (nonatomic,strong)UILabel *nameLabel;
 @end

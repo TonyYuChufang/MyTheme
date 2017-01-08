@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 #define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
-#define SCREEM_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 extern CGFloat const rightMenuWith;
 
