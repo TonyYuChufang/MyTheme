@@ -18,6 +18,7 @@
 		3476B4AD1E0478E1003D63FC /* MyThemeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476B4AC1E0478E1003D63FC /* MyThemeUITests.m */; };
 		3476B4BF1E04798F003D63FC /* constant.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3476B4BE1E04798F003D63FC /* constant.mm */; };
 		348F706B1E24173900CD2118 /* 图片 in Resources */ = {isa = PBXBuildFile; fileRef = 348F706A1E24173900CD2118 /* 图片 */; };
+		348F70731E241E0200CD2118 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F70721E241E0200CD2118 /* data.json */; };
 		3490FDE11E04C2D0009AE8AC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3490FDE01E04C2D0009AE8AC /* HomeViewController.m */; };
 		34F7ED7C1E23DDA800302975 /* LoginSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F7ED7B1E23DDA800302975 /* LoginSB.storyboard */; };
 		34F7ED801E23E01000302975 /* Icon-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F7ED7F1E23E01000302975 /* Icon-2.png */; };
@@ -98,6 +99,7 @@
 		3476B4BD1E04798F003D63FC /* constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constant.h; sourceTree = "<group>"; };
 		3476B4BE1E04798F003D63FC /* constant.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = constant.mm; sourceTree = "<group>"; };
 		348F706A1E24173900CD2118 /* 图片 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "图片"; sourceTree = "<group>"; };
+		348F70721E241E0200CD2118 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3490FDDF1E04C2D0009AE8AC /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		3490FDE01E04C2D0009AE8AC /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		34F7ED7B1E23DDA800302975 /* LoginSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginSB.storyboard; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				9A735CDC1E06779E007722A4 /* View */,
 				9A735CB61E0676D7007722A4 /* image */,
 				34F7ED791E23DBAA00302975 /* 登录注册 */,
+				348F706C1E24194900CD2118 /* 个人中心 */,
 				3490FDDE1E04C2B3009AE8AC /* Controller */,
 				3476B4BC1E04796D003D63FC /* constant */,
 				3476B4BB1E04794E003D63FC /* APPDelegate */,
@@ -227,6 +230,7 @@
 		3476B4871E0478E1003D63FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				348F70721E241E0200CD2118 /* data.json */,
 				3476B4881E0478E1003D63FC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -266,6 +270,45 @@
 				3476B4BE1E04798F003D63FC /* constant.mm */,
 			);
 			name = constant;
+			sourceTree = "<group>";
+		};
+		348F706C1E24194900CD2118 /* 个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				348F70711E24196800CD2118 /* 用户 */,
+				348F70701E24196500CD2118 /* 动态 */,
+				348F706F1E24196300CD2118 /* 收藏 */,
+				348F706E1E24196100CD2118 /* 设计 */,
+			);
+			name = "个人中心";
+			sourceTree = "<group>";
+		};
+		348F706E1E24196100CD2118 /* 设计 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "设计";
+			sourceTree = "<group>";
+		};
+		348F706F1E24196300CD2118 /* 收藏 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "收藏";
+			sourceTree = "<group>";
+		};
+		348F70701E24196500CD2118 /* 动态 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "动态";
+			sourceTree = "<group>";
+		};
+		348F70711E24196800CD2118 /* 用户 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "用户";
 			sourceTree = "<group>";
 		};
 		3490FDDE1E04C2B3009AE8AC /* Controller */ = {
@@ -562,6 +605,7 @@
 				3476B4971E0478E1003D63FC /* LaunchScreen.storyboard in Resources */,
 				9A735CDA1E067701007722A4 /* multiply@3x.png in Resources */,
 				9A735CD11E067701007722A4 /* normal41@2x.png in Resources */,
+				348F70731E241E0200CD2118 /* data.json in Resources */,
 				9A735CC11E0676EE007722A4 /* defaultAvatar@2x.png in Resources */,
 				9A735CD31E067701007722A4 /* normal1@2x.png in Resources */,
 				9A735CD71E067701007722A4 /* normal3@2x.png in Resources */,
