@@ -66,9 +66,14 @@
         return cell;
     }else{
         normalCell *cell = [tableView dequeueReusableCellWithIdentifier:@"normalCell" forIndexPath:indexPath];
-        cell.iconImage.image = [[UIImage imageNamed:[NSString stringWithFormat:@"normal%ld",indexPath.row]] imageWithColor:[UIColor grayColor]];
+        cell.iconImage.image = [[UIImage imageNamed:[NSString stringWithFormat:@"normal%ld",(long)indexPath.row]] imageWithColor:[UIColor grayColor]];
         cell.titleLabel.text = _dataSourcet   [indexPath.row];
         return cell;
+    }
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(indexPath.row == 0){
+        [_delegate modalToLogin];
     }
 }
 @end

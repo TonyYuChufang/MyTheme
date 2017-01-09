@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="0hb-Pf-iSs">
+            <objects>
+                <viewController storyboardIdentifier="RegisterVC" id="9IX-Tc-JR1" customClass="RegisterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ezg-9W-pSA"/>
+                        <viewControllerLayoutGuide type="bottom" id="aTE-c3-HAY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dHv-Cm-Qkn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="DZJ-fV-zgI">
+                                <rect key="frame" x="60" y="70" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9Ko-cS-hCp"/>
+                                    <constraint firstAttribute="height" constant="200" id="CrY-K0-PHI"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nrt-V4-V5g">
+                                <rect key="frame" x="16" y="310" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w0g-GQ-xdC">
+                                <rect key="frame" x="16" y="348" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtZ-Kz-Udy">
+                                <rect key="frame" x="16" y="424" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.87843137250000003" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" red="0.9271612199" green="0.88299924439999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bC-hk-WtV">
+                                <rect key="frame" x="280" y="20" width="42" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="Dkh-0A-31z"/>
+                                    <constraint firstAttribute="height" constant="32" id="Mon-0L-fE2"/>
+                                </constraints>
+                                <state key="normal" image="multiply.png"/>
+                                <connections>
+                                    <action selector="didMiss:" destination="9IX-Tc-JR1" eventType="touchUpInside" id="26G-E9-SUW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7K7-fc-TE4">
+                                <rect key="frame" x="16" y="386" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7K7-fc-TE4" firstAttribute="trailing" secondItem="dHv-Cm-Qkn" secondAttribute="trailingMargin" id="5SR-wV-GtX"/>
+                            <constraint firstItem="GtZ-Kz-Udy" firstAttribute="trailing" secondItem="dHv-Cm-Qkn" secondAttribute="trailingMargin" id="DtE-oF-ETo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0bC-hk-WtV" secondAttribute="trailing" constant="-18" id="Erd-gw-CHg"/>
+                            <constraint firstItem="7K7-fc-TE4" firstAttribute="top" secondItem="w0g-GQ-xdC" secondAttribute="bottom" constant="8" id="KRl-1B-6a2"/>
+                            <constraint firstItem="DZJ-fV-zgI" firstAttribute="centerX" secondItem="dHv-Cm-Qkn" secondAttribute="centerX" id="RXa-3p-t2A"/>
+                            <constraint firstItem="0bC-hk-WtV" firstAttribute="top" secondItem="ezg-9W-pSA" secondAttribute="bottom" id="UvU-V5-tzI"/>
+                            <constraint firstItem="DZJ-fV-zgI" firstAttribute="top" secondItem="ezg-9W-pSA" secondAttribute="bottom" constant="50" id="aCN-Cj-bUw"/>
+                            <constraint firstItem="w0g-GQ-xdC" firstAttribute="trailing" secondItem="dHv-Cm-Qkn" secondAttribute="trailingMargin" id="d06-za-Jf8"/>
+                            <constraint firstItem="Nrt-V4-V5g" firstAttribute="leading" secondItem="dHv-Cm-Qkn" secondAttribute="leadingMargin" id="ob2-df-4R8"/>
+                            <constraint firstItem="GtZ-Kz-Udy" firstAttribute="leading" secondItem="dHv-Cm-Qkn" secondAttribute="leadingMargin" id="ovR-3w-Cfb"/>
+                            <constraint firstItem="Nrt-V4-V5g" firstAttribute="top" secondItem="DZJ-fV-zgI" secondAttribute="bottom" constant="40" id="peB-z4-Tao"/>
+                            <constraint firstItem="w0g-GQ-xdC" firstAttribute="top" secondItem="Nrt-V4-V5g" secondAttribute="bottom" constant="8" id="s19-zY-R7D"/>
+                            <constraint firstItem="GtZ-Kz-Udy" firstAttribute="top" secondItem="7K7-fc-TE4" secondAttribute="bottom" constant="8" id="t7q-PU-kUI"/>
+                            <constraint firstItem="Nrt-V4-V5g" firstAttribute="trailing" secondItem="dHv-Cm-Qkn" secondAttribute="trailingMargin" id="vxi-AZ-BpU"/>
+                            <constraint firstItem="w0g-GQ-xdC" firstAttribute="leading" secondItem="dHv-Cm-Qkn" secondAttribute="leadingMargin" id="x4e-jg-D71"/>
+                            <constraint firstItem="7K7-fc-TE4" firstAttribute="leading" secondItem="dHv-Cm-Qkn" secondAttribute="leadingMargin" id="xjO-GS-Ayr"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="iconImageTopContraint" destination="aCN-Cj-bUw" id="1n3-Jn-RwJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYK-uQ-7uy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="178"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-1.png" width="256" height="256"/>
+        <image name="multiply.png" width="30" height="30"/>
+    </resources>
+</document>

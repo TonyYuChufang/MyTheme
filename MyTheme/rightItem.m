@@ -7,7 +7,7 @@
 //
 
 #import "rightItem.h"
-#import "rightMenuView.h"
+
 @implementation rightItem
 {
     UIWindow *window;
@@ -19,6 +19,7 @@
     self = [super initWithImage:[UIImage imageNamed:@"toolbar-0480"] style:UIBarButtonItemStylePlain target:self action:@selector(clickRightItem)];
     _controlTarget = target;
     [self initUI];
+    rightMenu.delegate = _controlTarget;
     return self;
 }
 //初始化UI
@@ -37,7 +38,7 @@
     [window addSubview:rightMenu];
     rightMenu.hidden = true;
 }
-
+//按钮点击事件
 -(void)clickRightItem{
     [self showMenu];
 }

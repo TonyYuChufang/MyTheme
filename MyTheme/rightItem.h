@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "rightMenuView.h"
+
 @class HomeViewController;
 
 @interface rightItem : UIBarButtonItem
@@ -14,4 +16,6 @@
 @property (weak, nonatomic) HomeViewController *controlTarget;
 
 -(id)initRightItemWithTarget:(HomeViewController *)target;
+
+-(void)hideMenu;
 @end

@@ -9,7 +9,8 @@
 #import "HomeViewController.h"
 #import "titleView.h"
 #import "rightItem.h"
-@interface HomeViewController ()
+#import "LoginViewController.h"
+@interface HomeViewController ()<rightMenuViewDelegate>
 
 @end
 
@@ -38,4 +39,14 @@
     self.navigationItem.rightBarButtonItem = _rightItem;
 }
 
+#pragma mark - rightMenuDelegate 
+-(void)modalToLogin{
+    [_rightItem hideMenu];
+    UIStoryboard *loginSB = [UIStoryboard storyboardWithName:@"LoginSB" bundle:nil];
+    LoginViewController *loginVC = [loginSB instantiateViewControllerWithIdentifier:@"loginVC"];
+    [self presentViewController:loginVC animated:true completion:^{
+        
+    }];
+    
+}
 @end

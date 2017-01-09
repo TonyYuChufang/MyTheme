@@ -18,6 +18,13 @@
 		3476B4AD1E0478E1003D63FC /* MyThemeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476B4AC1E0478E1003D63FC /* MyThemeUITests.m */; };
 		3476B4BF1E04798F003D63FC /* constant.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3476B4BE1E04798F003D63FC /* constant.mm */; };
 		3490FDE11E04C2D0009AE8AC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3490FDE01E04C2D0009AE8AC /* HomeViewController.m */; };
+		34F7ED7C1E23DDA800302975 /* LoginSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F7ED7B1E23DDA800302975 /* LoginSB.storyboard */; };
+		34F7ED801E23E01000302975 /* Icon-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F7ED7F1E23E01000302975 /* Icon-2.png */; };
+		34F7ED831E23E37200302975 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F7ED821E23E37200302975 /* LoginViewController.m */; };
+		34F7ED871E23E4C000302975 /* Icon-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F7ED861E23E4C000302975 /* Icon-1.png */; };
+		34F7ED8B1E23EC5200302975 /* XKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F7ED891E23EC5200302975 /* XKeyBoard.m */; };
+		34F7ED911E23F8CC00302975 /* registerSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F7ED901E23F8CC00302975 /* registerSB.storyboard */; };
+		34F7ED941E23FAFB00302975 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F7ED931E23FAFB00302975 /* RegisterViewController.m */; };
 		9A735CBF1E0676EE007722A4 /* toolbar-0480@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A735CB71E0676EE007722A4 /* toolbar-0480@2x.png */; };
 		9A735CC01E0676EE007722A4 /* toolbar-0480@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A735CB81E0676EE007722A4 /* toolbar-0480@3x.png */; };
 		9A735CC11E0676EE007722A4 /* defaultAvatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A735CB91E0676EE007722A4 /* defaultAvatar@2x.png */; };
@@ -84,6 +91,16 @@
 		3476B4BE1E04798F003D63FC /* constant.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = constant.mm; sourceTree = "<group>"; };
 		3490FDDF1E04C2D0009AE8AC /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		3490FDE01E04C2D0009AE8AC /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		34F7ED7B1E23DDA800302975 /* LoginSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginSB.storyboard; sourceTree = "<group>"; };
+		34F7ED7F1E23E01000302975 /* Icon-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-2.png"; sourceTree = "<group>"; };
+		34F7ED811E23E37200302975 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		34F7ED821E23E37200302975 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		34F7ED861E23E4C000302975 /* Icon-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1.png"; sourceTree = "<group>"; };
+		34F7ED891E23EC5200302975 /* XKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKeyBoard.m; sourceTree = "<group>"; };
+		34F7ED8A1E23EC5200302975 /* XKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKeyBoard.h; sourceTree = "<group>"; };
+		34F7ED901E23F8CC00302975 /* registerSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = registerSB.storyboard; sourceTree = "<group>"; };
+		34F7ED921E23FAFB00302975 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		34F7ED931E23FAFB00302975 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		9A735CB71E0676EE007722A4 /* toolbar-0480@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-0480@2x.png"; sourceTree = "<group>"; };
 		9A735CB81E0676EE007722A4 /* toolbar-0480@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-0480@3x.png"; sourceTree = "<group>"; };
 		9A735CB91E0676EE007722A4 /* defaultAvatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defaultAvatar@2x.png"; sourceTree = "<group>"; };
@@ -171,9 +188,11 @@
 		3476B4861E0478E0003D63FC /* MyTheme */ = {
 			isa = PBXGroup;
 			children = (
+				34F7ED881E23EC4000302975 /* ThirdKit */,
 				3437DC411E21D65900B97888 /* Externsion */,
 				9A735CDC1E06779E007722A4 /* View */,
 				9A735CB61E0676D7007722A4 /* image */,
+				34F7ED791E23DBAA00302975 /* 登录注册 */,
 				3490FDDE1E04C2B3009AE8AC /* Controller */,
 				3476B4BC1E04796D003D63FC /* constant */,
 				3476B4BB1E04794E003D63FC /* APPDelegate */,
@@ -238,9 +257,80 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		34F7ED791E23DBAA00302975 /* 登录注册 */ = {
+			isa = PBXGroup;
+			children = (
+				34F7ED8E1E23F87800302975 /* 登录 */,
+				34F7ED8C1E23F86400302975 /* 注册 */,
+			);
+			name = "登录注册";
+			sourceTree = "<group>";
+		};
+		34F7ED7A1E23DBF000302975 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SB;
+			sourceTree = "<group>";
+		};
+		34F7ED841E23E37A00302975 /* C */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		34F7ED881E23EC4000302975 /* ThirdKit */ = {
+			isa = PBXGroup;
+			children = (
+				34F7ED891E23EC5200302975 /* XKeyBoard.m */,
+				34F7ED8A1E23EC5200302975 /* XKeyBoard.h */,
+			);
+			name = ThirdKit;
+			sourceTree = "<group>";
+		};
+		34F7ED8C1E23F86400302975 /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+				34F7ED8F1E23F89C00302975 /* C */,
+				34F7ED8D1E23F87300302975 /* SB */,
+			);
+			name = "注册";
+			sourceTree = "<group>";
+		};
+		34F7ED8D1E23F87300302975 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				34F7ED901E23F8CC00302975 /* registerSB.storyboard */,
+			);
+			name = SB;
+			sourceTree = "<group>";
+		};
+		34F7ED8E1E23F87800302975 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				34F7ED841E23E37A00302975 /* C */,
+				34F7ED811E23E37200302975 /* LoginViewController.h */,
+				34F7ED821E23E37200302975 /* LoginViewController.m */,
+				34F7ED7A1E23DBF000302975 /* SB */,
+				34F7ED7B1E23DDA800302975 /* LoginSB.storyboard */,
+			);
+			name = "登录";
+			sourceTree = "<group>";
+		};
+		34F7ED8F1E23F89C00302975 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				34F7ED921E23FAFB00302975 /* RegisterViewController.h */,
+				34F7ED931E23FAFB00302975 /* RegisterViewController.m */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
 		9A735CB61E0676D7007722A4 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				34F7ED7F1E23E01000302975 /* Icon-2.png */,
 				9A735CC71E067701007722A4 /* normal41@2x.png */,
 				9A735CC81E067701007722A4 /* normal41@3x.png */,
 				9A735CC91E067701007722A4 /* normal1@2x.png */,
@@ -259,6 +349,7 @@
 				9A735CBC1E0676EE007722A4 /* toolbar-0065@3x.png */,
 				9A735CBD1E0676EE007722A4 /* toolbar-0022@2x.png */,
 				9A735CBE1E0676EE007722A4 /* toolbar-0022@3x.png */,
+				34F7ED861E23E4C000302975 /* Icon-1.png */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -423,6 +514,8 @@
 				9A735CC11E0676EE007722A4 /* defaultAvatar@2x.png in Resources */,
 				9A735CD31E067701007722A4 /* normal1@2x.png in Resources */,
 				9A735CD71E067701007722A4 /* normal3@2x.png in Resources */,
+				34F7ED7C1E23DDA800302975 /* LoginSB.storyboard in Resources */,
+				34F7ED801E23E01000302975 /* Icon-2.png in Resources */,
 				9A735CC31E0676EE007722A4 /* toolbar-0065@2x.png in Resources */,
 				9A735CD21E067701007722A4 /* normal41@3x.png in Resources */,
 				9A735CC01E0676EE007722A4 /* toolbar-0480@3x.png in Resources */,
@@ -434,8 +527,10 @@
 				9A735CD91E067701007722A4 /* multiply@2x.png in Resources */,
 				9A735CD41E067701007722A4 /* normal1@3x.png in Resources */,
 				9A735CC21E0676EE007722A4 /* defaultAvatar@3x.png in Resources */,
+				34F7ED871E23E4C000302975 /* Icon-1.png in Resources */,
 				9A735CD81E067701007722A4 /* normal3@3x.png in Resources */,
 				3476B4941E0478E1003D63FC /* Assets.xcassets in Resources */,
+				34F7ED911E23F8CC00302975 /* registerSB.storyboard in Resources */,
 				9A735CC61E0676EE007722A4 /* toolbar-0022@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,11 +560,14 @@
 				3437DC471E21DB7600B97888 /* UIImage+externsion.m in Sources */,
 				3476B48C1E0478E1003D63FC /* AppDelegate.m in Sources */,
 				9A735CE91E068E55007722A4 /* rightMenuView.m in Sources */,
+				34F7ED8B1E23EC5200302975 /* XKeyBoard.m in Sources */,
 				3437DC441E21D68900B97888 /* UIView+externsion.m in Sources */,
 				9A735CDF1E0677EF007722A4 /* rightItem.m in Sources */,
 				3437DC401E21ACC000B97888 /* normalCell.m in Sources */,
 				3476B4891E0478E1003D63FC /* main.m in Sources */,
+				34F7ED831E23E37200302975 /* LoginViewController.m in Sources */,
 				9A735CEC1E0691D0007722A4 /* avaterCell.m in Sources */,
+				34F7ED941E23FAFB00302975 /* RegisterViewController.m in Sources */,
 				3490FDE11E04C2D0009AE8AC /* HomeViewController.m in Sources */,
 				9A735CE51E067904007722A4 /* titleView.m in Sources */,
 			);

@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol rightMenuViewDelegate <NSObject>
+-(void)modalToLogin;
+@end
 
-@interface rightMenuView : UITableView <UITableViewDelegate,UITableViewDataSource>
+@interface rightMenuView : UIView <UITableViewDelegate,UITableViewDataSource>
 
 @property (strong,nonatomic) NSArray *dataSourcet;
 
+@property (nonatomic, weak) id<rightMenuViewDelegate>delegate;
 @end
