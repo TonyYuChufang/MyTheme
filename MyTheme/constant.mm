@@ -11,3 +11,7 @@
 CGFloat const rightMenuWith = SCREEN_WIDTH/2;
 
 UIFont * const normalFont = [UIFont systemFontOfSize:14];
+
+NSString * const ipAddress = @"http://127.0.0.1:8000";
+
+NSString * const loginSuccess = @"loginSuccess";

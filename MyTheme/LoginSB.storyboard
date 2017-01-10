@@ -103,6 +103,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="iconImageTopContraint" destination="77B-R2-WFE" id="Rko-99-XoZ"/>
+                        <outlet property="password" destination="95i-9C-JrP" id="nWn-YQ-za5"/>
+                        <outlet property="username" destination="nvM-mg-Cyl" id="jJN-33-Gmj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nIL-OU-9sq" userLabel="First Responder" sceneMemberID="firstResponder"/>

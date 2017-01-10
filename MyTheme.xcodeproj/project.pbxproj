@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3419CA411E248230002A9B41 /* TUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3419CA401E248230002A9B41 /* TUser.m */; };
+		341E64FB1E2422D10052885B /* XHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 341E64FA1E2422D10052885B /* XHttp.m */; };
+		341E64FE1E2425A70052885B /* NSString+externsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 341E64FD1E2425A70052885B /* NSString+externsion.m */; };
+		341E65021E2429430052885B /* NSData+externsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 341E65011E2429430052885B /* NSData+externsion.m */; };
 		3437DC401E21ACC000B97888 /* normalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3437DC3F1E21ACC000B97888 /* normalCell.m */; };
 		3437DC441E21D68900B97888 /* UIView+externsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3437DC431E21D68900B97888 /* UIView+externsion.m */; };
 		3437DC471E21DB7600B97888 /* UIImage+externsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3437DC461E21DB7600B97888 /* UIImage+externsion.m */; };
@@ -76,6 +80,14 @@
 		0EBA55C845FF98A855694512 /* Pods-MyThemeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyThemeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyThemeTests/Pods-MyThemeTests.release.xcconfig"; sourceTree = "<group>"; };
 		10DBD42ABA330041A354F7A3 /* Pods-MyTheme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTheme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTheme/Pods-MyTheme.debug.xcconfig"; sourceTree = "<group>"; };
 		192D7C86BD5DB6454AD62335 /* libPods-MyThemeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyThemeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3419CA3F1E248230002A9B41 /* TUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUser.h; sourceTree = "<group>"; };
+		3419CA401E248230002A9B41 /* TUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUser.m; sourceTree = "<group>"; };
+		341E64F91E2422D10052885B /* XHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHttp.h; sourceTree = "<group>"; };
+		341E64FA1E2422D10052885B /* XHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHttp.m; sourceTree = "<group>"; };
+		341E64FC1E2425A70052885B /* NSString+externsion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+externsion.h"; sourceTree = "<group>"; };
+		341E64FD1E2425A70052885B /* NSString+externsion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+externsion.m"; sourceTree = "<group>"; };
+		341E65001E2429430052885B /* NSData+externsion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+externsion.h"; sourceTree = "<group>"; };
+		341E65011E2429430052885B /* NSData+externsion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+externsion.m"; sourceTree = "<group>"; };
 		3437DC3E1E21ACC000B97888 /* normalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = normalCell.h; sourceTree = "<group>"; };
 		3437DC3F1E21ACC000B97888 /* normalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = normalCell.m; sourceTree = "<group>"; };
 		3437DC421E21D68900B97888 /* UIView+externsion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+externsion.h"; sourceTree = "<group>"; };
@@ -173,6 +185,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3419CA3E1E248207002A9B41 /* 用户信息 */ = {
+			isa = PBXGroup;
+			children = (
+				3419CA3F1E248230002A9B41 /* TUser.h */,
+				3419CA401E248230002A9B41 /* TUser.m */,
+			);
+			name = "用户信息";
+			sourceTree = "<group>";
+		};
+		341E64F81E2422B50052885B /* XHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				341E64F91E2422D10052885B /* XHttp.h */,
+				341E64FA1E2422D10052885B /* XHttp.m */,
+			);
+			name = XHTTP;
+			sourceTree = "<group>";
+		};
 		3437DC411E21D65900B97888 /* Externsion */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +210,10 @@
 				3437DC431E21D68900B97888 /* UIView+externsion.m */,
 				3437DC451E21DB7600B97888 /* UIImage+externsion.h */,
 				3437DC461E21DB7600B97888 /* UIImage+externsion.m */,
+				341E64FC1E2425A70052885B /* NSString+externsion.h */,
+				341E64FD1E2425A70052885B /* NSString+externsion.m */,
+				341E65001E2429430052885B /* NSData+externsion.h */,
+				341E65011E2429430052885B /* NSData+externsion.m */,
 			);
 			name = Externsion;
 			sourceTree = "<group>";
@@ -209,6 +243,8 @@
 		3476B4861E0478E0003D63FC /* MyTheme */ = {
 			isa = PBXGroup;
 			children = (
+				3419CA3E1E248207002A9B41 /* 用户信息 */,
+				341E64F81E2422B50052885B /* XHTTP */,
 				34F7ED881E23EC4000302975 /* ThirdKit */,
 				3437DC411E21D65900B97888 /* Externsion */,
 				9A735CDC1E06779E007722A4 /* View */,
@@ -777,13 +813,17 @@
 			files = (
 				3476B4BF1E04798F003D63FC /* constant.mm in Sources */,
 				3437DC471E21DB7600B97888 /* UIImage+externsion.m in Sources */,
+				341E64FE1E2425A70052885B /* NSString+externsion.m in Sources */,
+				3419CA411E248230002A9B41 /* TUser.m in Sources */,
 				3476B48C1E0478E1003D63FC /* AppDelegate.m in Sources */,
 				9A735CE91E068E55007722A4 /* rightMenuView.m in Sources */,
 				34F7ED8B1E23EC5200302975 /* XKeyBoard.m in Sources */,
 				3437DC441E21D68900B97888 /* UIView+externsion.m in Sources */,
+				341E64FB1E2422D10052885B /* XHttp.m in Sources */,
 				9A735CDF1E0677EF007722A4 /* rightItem.m in Sources */,
 				3437DC401E21ACC000B97888 /* normalCell.m in Sources */,
 				3476B4891E0478E1003D63FC /* main.m in Sources */,
+				341E65021E2429430052885B /* NSData+externsion.m in Sources */,
 				34F7ED831E23E37200302975 /* LoginViewController.m in Sources */,
 				9A735CEC1E0691D0007722A4 /* avaterCell.m in Sources */,
 				34F7ED941E23FAFB00302975 /* RegisterViewController.m in Sources */,
@@ -937,6 +977,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fangchuyu.MyTheme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -952,6 +993,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fangchuyu.MyTheme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};

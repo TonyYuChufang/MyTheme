@@ -36,5 +36,63 @@
         
     }];
 }
+- (IBAction)registerAction:(id)sender {
+    NSString *Name = _userName.text;
+    NSString *pwd1 = _password.text;
+    NSString *pwd2 = _password2.text;
+    
+    if([Name isEqualToString:@""]){
+        [SVProgressHUD showErrorWithStatus:@"请输入用户名"];
+        return;
+    }
+    if([pwd1 isEqualToString:@""]){
+        [SVProgressHUD showErrorWithStatus:@"请输入密码"];
+        return;
+    }
+    if([pwd2 isEqualToString:@""]){
+      [SVProgressHUD showErrorWithStatus:@"请确认密码"];
+        return;
+    }
+    if(![pwd1 isEqualToString:pwd2]){
+        [SVProgressHUD showErrorWithStatus:@"两次密码输入不一致"];
+        
+        return;
+    }
+//    __weak RegisterViewController *wself = self;
+    WS(wself);
+    NSDictionary *params = @{@"nickName":Name,@"passWord":pwd1};
+    [XHttp POSTMethon:@"/register" params:params callBack:^(NSDictionary *infoResult) {
+        NSNumber *code = infoResult[@"code"];
+        if([code isEqualToNumber:@(HttpSuccess)]){
+            [SVProgressHUD showSuccessWithStatus:infoResult[@"description"]];
+            [wself dismissViewControllerAnimated:true completion:^{
+            }];
+        }else{
+            NSLog(@"error");
+            [XHttp normalDealWithDic:infoResult];
+        }
+    }];
+}
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -33,15 +33,8 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w0g-GQ-xdC">
                                 <rect key="frame" x="16" y="348" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtZ-Kz-Udy">
-                                <rect key="frame" x="16" y="424" width="288" height="30"/>
-                                <color key="backgroundColor" red="0.40000000000000002" green="0.87843137250000003" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="注册">
-                                    <color key="titleColor" red="0.9271612199" green="0.88299924439999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bC-hk-WtV">
                                 <rect key="frame" x="280" y="20" width="42" height="32"/>
                                 <constraints>
@@ -58,6 +51,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtZ-Kz-Udy">
+                                <rect key="frame" x="16" y="424" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.87843137250000003" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" red="0.9271612199" green="0.88299924439999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerAction:" destination="9IX-Tc-JR1" eventType="touchUpInside" id="n0l-hz-OrM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -82,6 +85,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="iconImageTopContraint" destination="aCN-Cj-bUw" id="1n3-Jn-RwJ"/>
+                        <outlet property="password" destination="w0g-GQ-xdC" id="23d-w6-n7q"/>
+                        <outlet property="password2" destination="7K7-fc-TE4" id="G4P-a7-U8R"/>
+                        <outlet property="userName" destination="Nrt-V4-V5g" id="VsE-Kw-jE1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYK-uQ-7uy" userLabel="First Responder" sceneMemberID="firstResponder"/>

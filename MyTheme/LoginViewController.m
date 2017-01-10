@@ -39,6 +39,34 @@
     }];
 }
 - (IBAction)loginAction:(id)sender {
+    NSString *username = _username.text;
+    NSString *password = _password.text;
+    
+    if([username isEqualToString:@""]){
+        [SVProgressHUD showErrorWithStatus:@"请输入用户名"];
+        return;
+    }
+    if([password isEqualToString:@""]){
+        [SVProgressHUD showErrorWithStatus:@"请输入密码"];
+        return;
+    }
+    WS(wself);
+    NSDictionary *params = @{@"nickName":username,@"passWord":password};
+    [XHttp POSTMethon:@"/login" params:params callBack:^(NSDictionary *infoResult) {
+        NSNumber *code = infoResult[@"code"];
+        TUser *user = [TUser new];
+        user.username = infoResult[@"nickName"];
+        user.userid = infoResult[@"userid"];
+        [user save];
+        if([code isEqualToNumber:@(HttpSuccess)]){
+            [XHttp normalDealWithDic:infoResult];
+            [wself dismissViewControllerAnimated:true completion:^{
+            }];
+            [[NSNotificationCenter defaultCenter]postNotificationName:loginSuccess object:nil];
+        }else{
+            [XHttp normalDealWithDic:infoResult];
+        }
+    }];
 }
 - (IBAction)registerNewUser:(id)sender {
     UIStoryboard *SB = [UIStoryboard storyboardWithName:@"registerSB" bundle:nil];

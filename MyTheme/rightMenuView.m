@@ -43,7 +43,7 @@
     _tableView.dataSource = self;
     _tableView.tableFooterView = [UIView new];
     [self addSubview:_tableView];
-    
+   [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(loginSuccess) name:loginSuccess object:nil];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.row == 0){
@@ -63,6 +63,9 @@
     if(indexPath.row == 0){
         avaterCell *cell = [tableView dequeueReusableCellWithIdentifier:@"avaterCell" forIndexPath:indexPath];
         cell.nameLabel.text = _dataSourcet[indexPath.row];
+        if([TUser currentUser]){
+            cell.nameLabel.text = [TUser currentUser].username;
+        }
         return cell;
     }else{
         normalCell *cell = [tableView dequeueReusableCellWithIdentifier:@"normalCell" forIndexPath:indexPath];
@@ -73,7 +76,14 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.row == 0){
-        [_delegate modalToLogin];
+        if([TUser currentUser]){
+            
+        }else{
+            [_delegate modalToLogin];
+        }
     }
+}
+-(void)loginSuccess{
+    [_tableView reloadData];
 }
 @end

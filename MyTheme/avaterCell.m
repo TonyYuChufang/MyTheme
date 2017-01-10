@@ -25,7 +25,7 @@
     _avater = [[UIImageView alloc]initWithFrame:CGRectMake(15, 80, 70, 70)];
     _avater.layer.cornerRadius =35;
     _avater.layer.masksToBounds = true;
-    _avater.layer.borderColor = [[UIColor whiteColor] CGColor];
+    _avater.layer.borderColor = [[UIColor lightGrayColor] CGColor];
     _avater.layer.borderWidth = 1;
     _avater.contentMode = UIViewContentModeScaleAspectFill;
     _avater.image = [UIImage imageNamed:@"defaultAvatar"];
