@@ -6,3 +6,4 @@
 #import "NSData+externsion.h"
 #import "XHttp.h"
 #import "TUser.h"
+#import "Bmob.h"

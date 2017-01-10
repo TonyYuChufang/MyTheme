@@ -29,7 +29,7 @@
     HomeViewController *mainVC = [[HomeViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:mainVC];
     _window.rootViewController = nav;
-    
+    [Bmob registerWithAppKey:@"4d28e2568e9a0f22c35debc0325963c6"];
     return YES;
 }
 
