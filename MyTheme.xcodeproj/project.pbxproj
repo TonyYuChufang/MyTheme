@@ -33,6 +33,11 @@
 		34F7ED8B1E23EC5200302975 /* XKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F7ED891E23EC5200302975 /* XKeyBoard.m */; };
 		34F7ED911E23F8CC00302975 /* registerSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F7ED901E23F8CC00302975 /* registerSB.storyboard */; };
 		34F7ED941E23FAFB00302975 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F7ED931E23FAFB00302975 /* RegisterViewController.m */; };
+		34F882631E250F70009A742D /* middleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F882621E250F70009A742D /* middleView.m */; };
+		34F882671E251496009A742D /* ThemeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F882661E251496009A742D /* ThemeDetailViewController.m */; };
+		34F8826A1E25246A009A742D /* PaperImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F882691E25246A009A742D /* PaperImageView.m */; };
+		34F8826D1E252994009A742D /* bView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F8826C1E252994009A742D /* bView.m */; };
+		34FE94EF1E255337000528AD /* personViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE94EE1E255337000528AD /* personViewController.m */; };
 		9A735CBF1E0676EE007722A4 /* toolbar-0480@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A735CB71E0676EE007722A4 /* toolbar-0480@2x.png */; };
 		9A735CC01E0676EE007722A4 /* toolbar-0480@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A735CB81E0676EE007722A4 /* toolbar-0480@3x.png */; };
 		9A735CC11E0676EE007722A4 /* defaultAvatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A735CB91E0676EE007722A4 /* defaultAvatar@2x.png */; };
@@ -130,6 +135,16 @@
 		34F7ED901E23F8CC00302975 /* registerSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = registerSB.storyboard; sourceTree = "<group>"; };
 		34F7ED921E23FAFB00302975 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		34F7ED931E23FAFB00302975 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		34F882611E250F70009A742D /* middleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = middleView.h; sourceTree = "<group>"; };
+		34F882621E250F70009A742D /* middleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = middleView.m; sourceTree = "<group>"; };
+		34F882651E251496009A742D /* ThemeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeDetailViewController.h; sourceTree = "<group>"; };
+		34F882661E251496009A742D /* ThemeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeDetailViewController.m; sourceTree = "<group>"; };
+		34F882681E25246A009A742D /* PaperImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperImageView.h; sourceTree = "<group>"; };
+		34F882691E25246A009A742D /* PaperImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperImageView.m; sourceTree = "<group>"; };
+		34F8826B1E252994009A742D /* bView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bView.h; sourceTree = "<group>"; };
+		34F8826C1E252994009A742D /* bView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bView.m; sourceTree = "<group>"; };
+		34FE94ED1E255337000528AD /* personViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personViewController.h; sourceTree = "<group>"; };
+		34FE94EE1E255337000528AD /* personViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personViewController.m; sourceTree = "<group>"; };
 		564CEBC17947B4482CAC9CF4 /* Pods-MyThemeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyThemeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyThemeUITests/Pods-MyThemeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		60203C6019259E47805929DE /* libPods-MyTheme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTheme.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA1B29E8C191585A88DA61B /* Pods-MyTheme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTheme.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTheme/Pods-MyTheme.release.xcconfig"; sourceTree = "<group>"; };
@@ -321,6 +336,8 @@
 				348F70701E24196500CD2118 /* 动态 */,
 				348F706F1E24196300CD2118 /* 收藏 */,
 				348F706E1E24196100CD2118 /* 设计 */,
+				34FE94ED1E255337000528AD /* personViewController.h */,
+				34FE94EE1E255337000528AD /* personViewController.m */,
 			);
 			name = "个人中心";
 			sourceTree = "<group>";
@@ -356,6 +373,7 @@
 		3490FDDE1E04C2B3009AE8AC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				34F882641E251475009A742D /* ThemeDetailViewController */,
 				9A735CDB1E06778F007722A4 /* mainController */,
 			);
 			name = Controller;
@@ -433,6 +451,15 @@
 			name = C;
 			sourceTree = "<group>";
 		};
+		34F882641E251475009A742D /* ThemeDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				34F882651E251496009A742D /* ThemeDetailViewController.h */,
+				34F882661E251496009A742D /* ThemeDetailViewController.m */,
+			);
+			name = ThemeDetailViewController;
+			sourceTree = "<group>";
+		};
 		5C0AB143826B6C3AE039E47B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -487,6 +514,12 @@
 				342AB4231E24C7A5006AEDCE /* ActivityScrollView.h */,
 				9A735CE21E067809007722A4 /* MainTitle View */,
 				9A735CE01E0677F4007722A4 /* rigthItem */,
+				34F882611E250F70009A742D /* middleView.h */,
+				34F882621E250F70009A742D /* middleView.m */,
+				34F882681E25246A009A742D /* PaperImageView.h */,
+				34F882691E25246A009A742D /* PaperImageView.m */,
+				34F8826B1E252994009A742D /* bView.h */,
+				34F8826C1E252994009A742D /* bView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -824,15 +857,20 @@
 				3476B4BF1E04798F003D63FC /* constant.mm in Sources */,
 				3437DC471E21DB7600B97888 /* UIImage+externsion.m in Sources */,
 				341E64FE1E2425A70052885B /* NSString+externsion.m in Sources */,
+				34F882631E250F70009A742D /* middleView.m in Sources */,
+				34F8826A1E25246A009A742D /* PaperImageView.m in Sources */,
 				3419CA411E248230002A9B41 /* TUser.m in Sources */,
 				3476B48C1E0478E1003D63FC /* AppDelegate.m in Sources */,
 				9A735CE91E068E55007722A4 /* rightMenuView.m in Sources */,
+				34F882671E251496009A742D /* ThemeDetailViewController.m in Sources */,
 				34F7ED8B1E23EC5200302975 /* XKeyBoard.m in Sources */,
 				3437DC441E21D68900B97888 /* UIView+externsion.m in Sources */,
 				341E64FB1E2422D10052885B /* XHttp.m in Sources */,
 				9A735CDF1E0677EF007722A4 /* rightItem.m in Sources */,
 				3437DC401E21ACC000B97888 /* normalCell.m in Sources */,
+				34FE94EF1E255337000528AD /* personViewController.m in Sources */,
 				3476B4891E0478E1003D63FC /* main.m in Sources */,
+				34F8826D1E252994009A742D /* bView.m in Sources */,
 				341E65021E2429430052885B /* NSData+externsion.m in Sources */,
 				34F7ED831E23E37200302975 /* LoginViewController.m in Sources */,
 				342AB4241E24C7A5006AEDCE /* ActivityScrollView.m in Sources */,

@@ -67,7 +67,7 @@
     return array;
 }
 - (CGRect)scrollViewWithThreePagesCenterItemFrameForWSWScrollView:(WSWScrollView *)scrollView{
-    CGRect frame = CGRectMake(0, 0, SCREEN_WIDTH - 100, SCREEN_HEIGHT);
+    CGRect frame = CGRectMake(0, 0, SCREEN_WIDTH - 100, 0);
     return frame;
 }
 #pragma mark - 点击事件

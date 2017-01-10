@@ -7,3 +7,5 @@
 #import "XHttp.h"
 #import "TUser.h"
 #import "Bmob.h"
+#import "SDImageCache.h"
+#import "UIImageView+WebCache.h"

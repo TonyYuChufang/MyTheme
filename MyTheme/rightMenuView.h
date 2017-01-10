@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 @protocol rightMenuViewDelegate <NSObject>
 -(void)modalToLogin;
+-(void)moveToPersonCenter;
 @end
 
 @interface rightMenuView : UIView <UITableViewDelegate,UITableViewDataSource>

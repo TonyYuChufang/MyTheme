@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "WSWScrollView.h"
-@interface HomeViewController : UIViewController<WSWScrollViewDelegate,WSWScrollViewDataSource>
+@interface HomeViewController : UIViewController
 
 @end

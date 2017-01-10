@@ -9,7 +9,7 @@
 #import "rightMenuView.h"
 #import "avaterCell.h"
 #import "normalCell.h"
-
+#import "personViewController.h"
 @implementation rightMenuView
 {
     UITableView *_tableView;
@@ -77,7 +77,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.row == 0){
         if([TUser currentUser]){
-            
+            [_delegate moveToPersonCenter];
         }else{
             [_delegate modalToLogin];
         }
