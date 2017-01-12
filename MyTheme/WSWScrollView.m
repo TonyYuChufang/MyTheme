@@ -124,8 +124,6 @@
     //添加滚动视图
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
     scrollView.showsHorizontalScrollIndicator = NO;
-    
-    
     scrollView.pagingEnabled = YES;
     scrollView.delegate = self;
     scrollView.clipsToBounds  = NO;
@@ -151,8 +149,8 @@
 
         //默认和视差,用一样的双UIImageView就可以搞定
         scrollView.contentOffset = CGPointMake(CGRectGetWidth(self.frame), 0);
-        scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.frame) * 3, 0);
-        scrollView.alwaysBounceVertical = NO;
+        scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.frame) * 3, CGRectGetHeight(self.frame));
+        
         //    先设置第一张图片的位置,在滚动视图的正中央
         self.firstImageView.frame = CGRectMake(CGRectGetWidth(self.frame), 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
     }else{
@@ -436,7 +434,7 @@
 -(void) initSubviews
 {
     //设置默认值,防止代理协议中没有设置每张图片的大小
-    self.centerItemFrame = CGRectMake(50, 100, self.frame.size.width - 100, 100);
+    self.centerItemFrame = CGRectMake(50, 100, self.frame.size.width - 100, 200);
     //获取每张图片的frame
     if ([self.dataSource respondsToSelector:@selector(scrollViewWithThreePagesCenterItemFrameForWSWScrollView:)]) {
         self.centerItemFrame = [self.dataSource scrollViewWithThreePagesCenterItemFrameForWSWScrollView:self];
@@ -446,7 +444,7 @@
     _scrollView.center = CGPointMake(self.frame.size.width/2 , _scrollView.center.y);
     //如果是第三种模式,那就要一下子创建五个UIImageView,并让滚动视图置中
     _scrollView.contentOffset = CGPointMake(CGRectGetWidth(self.centerItemFrame)*2, 0);
-    _scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.centerItemFrame) * 5, 0);
+    _scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.centerItemFrame) * 5, CGRectGetHeight(self.centerItemFrame));
 
     //设置三个视图的初始位置
     [self scrollViewWithThreePagesRetFrame];

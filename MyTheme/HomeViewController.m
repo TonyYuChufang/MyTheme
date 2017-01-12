@@ -35,20 +35,20 @@
 //初始化UI
 
 -(void)initUI{
-    self.navigationController.navigationBar.subviews[0].alpha = 0;
+    self.navigationController.navigationBar.subviews[0].alpha = 1;
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:91.0/255.0 green:250.0/255.0 blue:39.0/255.0 alpha:1];
     //设置标题
-    _titleView = [[titleView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH-70, 40)];
-    UIView *bottomView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH-40, 40)];
+    
+    UIView *bottomView = [[UIView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.navigationController.navigationBar.frame)-40, SCREEN_WIDTH-40, 40)];
+    _titleView = [[titleView alloc]initWithFrame:CGRectMake(0, 4, SCREEN_WIDTH-70, 30)];
     bottomView.layer.shadowColor = [[UIColor blackColor]CGColor];
     bottomView.layer.shadowOffset = CGSizeMake(0, 3);
-    bottomView.backgroundColor = [UIColor colorWithRed:91 green:250 blue:39 alpha:0];
     [bottomView addSubview:_titleView];
     self.navigationItem.titleView = bottomView;
 //    添加rigthItem
     _rightItem = [[rightItem alloc]initRightItemWithTarget:self];
     self.navigationItem.rightBarButtonItem = _rightItem;
-    
-    _scrollView = [[ActivityScrollView  alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(bottomView.frame)+15, SCREEN_WIDTH, SCREEN_HEIGHT*0.3)];
+    _scrollView = [[ActivityScrollView  alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.navigationController.navigationBar.frame)+5, SCREEN_WIDTH, SCREEN_HEIGHT*0.3)];
     [self.view addSubview:_scrollView];
     
     _middleView = [[middleView alloc]initWithFrame:CGRectMake(20, CGRectGetMaxY(_scrollView.frame)+20, SCREEN_WIDTH-40, 30)];

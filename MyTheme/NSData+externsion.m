@@ -11,8 +11,7 @@
 @implementation NSData(externsion)
 -(NSDictionary *)objectWithData{
     NSError *error;
-    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:self options:NSJSONReadingMutableContainers error:&error];
-    
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:self options:NSJSONReadingMutableContainers error:&error];    
     return json;
 }
 @end

@@ -31,8 +31,7 @@
     _avater.image = [UIImage imageNamed:@"defaultAvatar"];
     [self.contentView addSubview:_avater];
     
-    _nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_avater.frame)+5, CGRectGetMinY(_avater.frame)+23
-                                                          ,rightMenuWith-CGRectGetWidth(_avater.frame)-10,20)];
+    _nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_avater.frame)+5, CGRectGetMinY(_avater.frame)+23,SCREEN_WIDTH,20)];
     _nameLabel.textColor = [UIColor grayColor];
     _nameLabel.font = normalFont;
     [self.contentView addSubview:_nameLabel];

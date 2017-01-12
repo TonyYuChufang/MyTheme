@@ -11,7 +11,6 @@
 		341E64FB1E2422D10052885B /* XHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 341E64FA1E2422D10052885B /* XHttp.m */; };
 		341E64FE1E2425A70052885B /* NSString+externsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 341E64FD1E2425A70052885B /* NSString+externsion.m */; };
 		341E65021E2429430052885B /* NSData+externsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 341E65011E2429430052885B /* NSData+externsion.m */; };
-		342AB41D1E24AE6B006AEDCE /* WSWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342AB41C1E24AE6B006AEDCE /* WSWScrollView.m */; };
 		342AB4241E24C7A5006AEDCE /* ActivityScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342AB4221E24C7A5006AEDCE /* ActivityScrollView.m */; };
 		3437DC401E21ACC000B97888 /* normalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3437DC3F1E21ACC000B97888 /* normalCell.m */; };
 		3437DC441E21D68900B97888 /* UIView+externsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3437DC431E21D68900B97888 /* UIView+externsion.m */; };
@@ -26,6 +25,7 @@
 		348F706B1E24173900CD2118 /* 图片 in Resources */ = {isa = PBXBuildFile; fileRef = 348F706A1E24173900CD2118 /* 图片 */; };
 		348F70731E241E0200CD2118 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F70721E241E0200CD2118 /* data.json */; };
 		3490FDE11E04C2D0009AE8AC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3490FDE01E04C2D0009AE8AC /* HomeViewController.m */; };
+		34F6D2F31E27F81F00790450 /* WSWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F6D2F21E27F81F00790450 /* WSWScrollView.m */; };
 		34F7ED7C1E23DDA800302975 /* LoginSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F7ED7B1E23DDA800302975 /* LoginSB.storyboard */; };
 		34F7ED801E23E01000302975 /* Icon-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F7ED7F1E23E01000302975 /* Icon-2.png */; };
 		34F7ED831E23E37200302975 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F7ED821E23E37200302975 /* LoginViewController.m */; };
@@ -95,8 +95,6 @@
 		341E64FD1E2425A70052885B /* NSString+externsion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+externsion.m"; sourceTree = "<group>"; };
 		341E65001E2429430052885B /* NSData+externsion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+externsion.h"; sourceTree = "<group>"; };
 		341E65011E2429430052885B /* NSData+externsion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+externsion.m"; sourceTree = "<group>"; };
-		342AB41B1E24AE6B006AEDCE /* WSWScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSWScrollView.h; sourceTree = "<group>"; };
-		342AB41C1E24AE6B006AEDCE /* WSWScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSWScrollView.m; sourceTree = "<group>"; };
 		342AB4221E24C7A5006AEDCE /* ActivityScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityScrollView.m; sourceTree = "<group>"; };
 		342AB4231E24C7A5006AEDCE /* ActivityScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityScrollView.h; sourceTree = "<group>"; };
 		3437DC3E1E21ACC000B97888 /* normalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = normalCell.h; sourceTree = "<group>"; };
@@ -125,6 +123,8 @@
 		348F70721E241E0200CD2118 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3490FDDF1E04C2D0009AE8AC /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		3490FDE01E04C2D0009AE8AC /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		34F6D2F11E27F81F00790450 /* WSWScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSWScrollView.h; sourceTree = "<group>"; };
+		34F6D2F21E27F81F00790450 /* WSWScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSWScrollView.m; sourceTree = "<group>"; };
 		34F7ED7B1E23DDA800302975 /* LoginSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginSB.storyboard; sourceTree = "<group>"; };
 		34F7ED7F1E23E01000302975 /* Icon-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-2.png"; sourceTree = "<group>"; };
 		34F7ED811E23E37200302975 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -407,8 +407,8 @@
 			children = (
 				34F7ED891E23EC5200302975 /* XKeyBoard.m */,
 				34F7ED8A1E23EC5200302975 /* XKeyBoard.h */,
-				342AB41B1E24AE6B006AEDCE /* WSWScrollView.h */,
-				342AB41C1E24AE6B006AEDCE /* WSWScrollView.m */,
+				34F6D2F11E27F81F00790450 /* WSWScrollView.h */,
+				34F6D2F21E27F81F00790450 /* WSWScrollView.m */,
 			);
 			name = ThirdKit;
 			sourceTree = "<group>";
@@ -510,8 +510,8 @@
 		9A735CDC1E06779E007722A4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				342AB4221E24C7A5006AEDCE /* ActivityScrollView.m */,
 				342AB4231E24C7A5006AEDCE /* ActivityScrollView.h */,
+				342AB4221E24C7A5006AEDCE /* ActivityScrollView.m */,
 				9A735CE21E067809007722A4 /* MainTitle View */,
 				9A735CE01E0677F4007722A4 /* rigthItem */,
 				34F882611E250F70009A742D /* middleView.h */,
@@ -856,6 +856,7 @@
 			files = (
 				3476B4BF1E04798F003D63FC /* constant.mm in Sources */,
 				3437DC471E21DB7600B97888 /* UIImage+externsion.m in Sources */,
+				34F6D2F31E27F81F00790450 /* WSWScrollView.m in Sources */,
 				341E64FE1E2425A70052885B /* NSString+externsion.m in Sources */,
 				34F882631E250F70009A742D /* middleView.m in Sources */,
 				34F8826A1E25246A009A742D /* PaperImageView.m in Sources */,
@@ -877,7 +878,6 @@
 				9A735CEC1E0691D0007722A4 /* avaterCell.m in Sources */,
 				34F7ED941E23FAFB00302975 /* RegisterViewController.m in Sources */,
 				3490FDE11E04C2D0009AE8AC /* HomeViewController.m in Sources */,
-				342AB41D1E24AE6B006AEDCE /* WSWScrollView.m in Sources */,
 				9A735CE51E067904007722A4 /* titleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

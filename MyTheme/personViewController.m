@@ -30,12 +30,13 @@
 //    _titleView = [[titleView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
 //    _titleView.titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
 //    _titleView.titleLabel.textAlignment = NSTextAlignmentCenter;
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 70, 40)];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH/2, 40)];
     [label setTextAlignment:NSTextAlignmentCenter];
     label.text = @"个人中心";
     UIView *bottomView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
     bottomView.layer.shadowColor = [[UIColor blackColor]CGColor];
     bottomView.layer.shadowOffset = CGSizeMake(0, 3);
+    bottomView.backgroundColor = [UIColor colorWithRed:91 green:250 blue:39 alpha:0];
     [bottomView addSubview:label];
     self.navigationItem.titleView = bottomView;
     _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
@@ -63,9 +64,11 @@
     if(indexPath.row == 0){
         avaterCell *cell = [tableView dequeueReusableCellWithIdentifier:@"avaterCell" forIndexPath:indexPath];
         cell.nameLabel.textColor = [UIColor blackColor];
+//        [cell.nameLabel moveToX:SCREEN_WIDTH/2];
+        
         cell.nameLabel.text = _persondataSource[indexPath.row];
         if([TUser currentUser]){
-            cell.nameLabel.text = [TUser currentUser].username;
+            cell.nameLabel.text = [@"当前用户        " addString:[TUser currentUser].username];
         }
         return cell;
     }else{
@@ -73,6 +76,7 @@
         cell.iconImage.image = [[UIImage imageNamed:[NSString stringWithFormat:@"normal%ld",(long)indexPath.row]] imageWithColor:[UIColor blackColor]];
         cell.titleLabel.textColor = [UIColor blackColor];
         cell.titleLabel.text = _persondataSource[indexPath.row];
+        [cell.titleLabel moveToX:SCREEN_WIDTH/2];
         return cell;
     }
 }

@@ -52,7 +52,7 @@
     NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc]initForWritingWithMutableData:data];
     [archiver encodeObject:self forKey:@"TUser"];
     [archiver finishEncoding];
-    
+  
     NSString *filePath = [NSHomeDirectory() addString:@"/Documents/user.data"];
     [data writeToFile:filePath atomically:true];
 }

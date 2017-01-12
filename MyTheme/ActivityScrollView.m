@@ -19,8 +19,9 @@
     return self;
 }
 -(void)initUI{
-    _scrollView = [[WSWScrollView alloc]initWithFrame:CGRectMake(0,0, SCREEN_WIDTH, SCREEN_HEIGHT*0.3) andScrollViewMode:ScrollWithDefault];
+    _scrollView = [[WSWScrollView alloc]initWithFrame:self.frame];
     _scrollView.timeInterval = 2.f;
+    self.backgroundColor = [UIColor blackColor];
     //    添加代理
     _scrollView.delegate = self;
     _scrollView.dataSource = self;
