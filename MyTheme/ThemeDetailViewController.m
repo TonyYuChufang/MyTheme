@@ -19,9 +19,14 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
+-(void)initUI{
+    
+}
+- (IBAction)likeAction:(id)sender {
+}
+- (IBAction)saveToPaperWall:(id)sender {
+}
+- (IBAction)comment:(id)sender {
+}
 @end

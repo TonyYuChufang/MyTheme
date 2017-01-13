@@ -15,6 +15,9 @@
 #import "middleView.h"
 #import "bView.h"
 #import "personViewController.h"
+#import "WSWScrollView.h"
+#import "MenuBar.h"
+#import "MoreThemeController.h"
 @interface HomeViewController ()<rightMenuViewDelegate,middleViewDelegate>
 
 @end
@@ -26,6 +29,7 @@
     ActivityScrollView *_scrollView;
     middleView *_middleView;
     bView *_bView;
+    MenuBar *_menuBar;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -48,7 +52,11 @@
 //    添加rigthItem
     _rightItem = [[rightItem alloc]initRightItemWithTarget:self];
     self.navigationItem.rightBarButtonItem = _rightItem;
-    _scrollView = [[ActivityScrollView  alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.navigationController.navigationBar.frame)+5, SCREEN_WIDTH, SCREEN_HEIGHT*0.3)];
+    
+    _menuBar = [[MenuBar alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.navigationController.navigationBar.frame), SCREEN_WIDTH, 50)];
+    _menuBar.translatesAutoresizingMaskIntoConstraints = true;
+    [self.view addSubview:_menuBar];
+    _scrollView = [[ActivityScrollView  alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_menuBar.frame)+5, SCREEN_WIDTH*3, SCREEN_HEIGHT*0.3)];
     [self.view addSubview:_scrollView];
     
     _middleView = [[middleView alloc]initWithFrame:CGRectMake(20, CGRectGetMaxY(_scrollView.frame)+20, SCREEN_WIDTH-40, 30)];
@@ -57,6 +65,7 @@
     [self.view addSubview:_middleView];
     
     _bView = [[bView alloc]initWithFrame:CGRectMake(20, CGRectGetMaxY(_middleView.frame), SCREEN_WIDTH-40, SCREEN_HEIGHT*0.4)];
+    _bView.userInteractionEnabled = YES;
     [self.view addSubview:_bView];
 }
 #pragma mark - rightMenu Delegate
@@ -69,12 +78,16 @@
     }];
 }
 -(void)moreAction{
-    ThemeDetailViewController *vc = [[ThemeDetailViewController alloc]init];
+    MoreThemeController *vc = [[MoreThemeController alloc]init];
     [self.navigationController pushViewController:vc animated:true];
 }
 -(void)moveToPersonCenter{
     personViewController *vc = [[personViewController alloc]init];
     [self.navigationController pushViewController:vc animated:true];
 }
-
+-(void)seeThemeDetail{
+    UIStoryboard *themeDetailSB = [UIStoryboard storyboardWithName:@"ThemeDetailSB" bundle:nil];
+    ThemeDetailViewController *tdVC = [themeDetailSB instantiateViewControllerWithIdentifier:@"themDetail"];
+    [self.navigationController pushViewController:tdVC animated:true];
+}
 @end

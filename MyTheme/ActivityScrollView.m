@@ -19,17 +19,19 @@
     return self;
 }
 -(void)initUI{
-    _scrollView = [[WSWScrollView alloc]initWithFrame:self.frame];
+    _scrollView = [[WSWScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*0.3) andScrollViewMode:ScrollWithDefault];
     _scrollView.timeInterval = 2.f;
-    self.backgroundColor = [UIColor blackColor];
-    //    添加代理
-    _scrollView.delegate = self;
+    //给自己上两个代理
     _scrollView.dataSource = self;
-    
+    _scrollView.delegate = self;
+    //添加带父视图上
     [self addSubview:_scrollView];
+    
 }
 #pragma mark - WSWScrollViewDataSource -
-- (NSArray *)imagesArrayForWSWScrollView:(WSWScrollView *)scrollView{
+//实现协议,这个是必须的,就是传递一个图片数组,本地的就直接上传文件字符串名,网络就穿字符串链接地址.
+- (NSArray *)imagesArrayForWSWScrollView:(WSWScrollView *)scrollView
+{
     //#if   1是网络图片,0是本地图片(你可以手动更改试一试);
 #if 1
     __block NSMutableString *str1 = [[NSMutableString alloc]init];
@@ -67,8 +69,11 @@
 #endif
     return array;
 }
-- (CGRect)scrollViewWithThreePagesCenterItemFrameForWSWScrollView:(WSWScrollView *)scrollView{
-    CGRect frame = CGRectMake(0, 0, SCREEN_WIDTH - 100, 0);
+
+//如果选择模式三,一定要提供中间图片的frame
+-(CGRect)scrollViewWithThreePagesCenterItemFrameForWSWScrollView:(WSWScrollView *)scrollView
+{
+    CGRect frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width - 100, [UIScreen mainScreen].bounds.size.height);
     return frame;
 }
 #pragma mark - 点击事件

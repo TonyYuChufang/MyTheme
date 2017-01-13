@@ -11,6 +11,9 @@
 		341E64FB1E2422D10052885B /* XHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 341E64FA1E2422D10052885B /* XHttp.m */; };
 		341E64FE1E2425A70052885B /* NSString+externsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 341E64FD1E2425A70052885B /* NSString+externsion.m */; };
 		341E65021E2429430052885B /* NSData+externsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 341E65011E2429430052885B /* NSData+externsion.m */; };
+		3429C8EE1E286902002EA3CE /* MoreThemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3429C8ED1E286902002EA3CE /* MoreThemeController.m */; };
+		3429C8F21E28697E002EA3CE /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 3429C8F11E28697E002EA3CE /* Theme.m */; };
+		3429C8F51E286A19002EA3CE /* ThemeDetailSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3429C8F41E286A19002EA3CE /* ThemeDetailSB.storyboard */; };
 		342AB4241E24C7A5006AEDCE /* ActivityScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342AB4221E24C7A5006AEDCE /* ActivityScrollView.m */; };
 		3437DC401E21ACC000B97888 /* normalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3437DC3F1E21ACC000B97888 /* normalCell.m */; };
 		3437DC441E21D68900B97888 /* UIView+externsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3437DC431E21D68900B97888 /* UIView+externsion.m */; };
@@ -25,6 +28,13 @@
 		348F706B1E24173900CD2118 /* 图片 in Resources */ = {isa = PBXBuildFile; fileRef = 348F706A1E24173900CD2118 /* 图片 */; };
 		348F70731E241E0200CD2118 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 348F70721E241E0200CD2118 /* data.json */; };
 		3490FDE11E04C2D0009AE8AC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3490FDE01E04C2D0009AE8AC /* HomeViewController.m */; };
+		34C3415A1E281BBD003E15E6 /* MenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C341591E281BBD003E15E6 /* MenuBar.m */; };
+		34C3415D1E2822AF003E15E6 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C3415C1E2822AF003E15E6 /* MenuCell.m */; };
+		34C341631E282DD0003E15E6 /* account.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C3415E1E282DD0003E15E6 /* account.png */; };
+		34C341641E282DD0003E15E6 /* home1.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C3415F1E282DD0003E15E6 /* home1.png */; };
+		34C341651E282DD0003E15E6 /* home142.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C341601E282DD0003E15E6 /* home142.png */; };
+		34C341661E282DD0003E15E6 /* paint64.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C341611E282DD0003E15E6 /* paint64.png */; };
+		34C341671E282DD0003E15E6 /* seo12.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C341621E282DD0003E15E6 /* seo12.png */; };
 		34F6D2F31E27F81F00790450 /* WSWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F6D2F21E27F81F00790450 /* WSWScrollView.m */; };
 		34F6D2F51E27FA1A00790450 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 34F6D2F41E27FA1A00790450 /* 1.json */; };
 		34F7ED7C1E23DDA800302975 /* LoginSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F7ED7B1E23DDA800302975 /* LoginSB.storyboard */; };
@@ -96,6 +106,11 @@
 		341E64FD1E2425A70052885B /* NSString+externsion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+externsion.m"; sourceTree = "<group>"; };
 		341E65001E2429430052885B /* NSData+externsion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+externsion.h"; sourceTree = "<group>"; };
 		341E65011E2429430052885B /* NSData+externsion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+externsion.m"; sourceTree = "<group>"; };
+		3429C8EC1E286902002EA3CE /* MoreThemeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreThemeController.h; sourceTree = "<group>"; };
+		3429C8ED1E286902002EA3CE /* MoreThemeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreThemeController.m; sourceTree = "<group>"; };
+		3429C8F01E28697E002EA3CE /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		3429C8F11E28697E002EA3CE /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
+		3429C8F41E286A19002EA3CE /* ThemeDetailSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThemeDetailSB.storyboard; sourceTree = "<group>"; };
 		342AB4221E24C7A5006AEDCE /* ActivityScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityScrollView.m; sourceTree = "<group>"; };
 		342AB4231E24C7A5006AEDCE /* ActivityScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityScrollView.h; sourceTree = "<group>"; };
 		3437DC3E1E21ACC000B97888 /* normalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = normalCell.h; sourceTree = "<group>"; };
@@ -124,6 +139,15 @@
 		348F70721E241E0200CD2118 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3490FDDF1E04C2D0009AE8AC /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		3490FDE01E04C2D0009AE8AC /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		34C341581E281BBD003E15E6 /* MenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuBar.h; sourceTree = "<group>"; };
+		34C341591E281BBD003E15E6 /* MenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuBar.m; sourceTree = "<group>"; };
+		34C3415B1E2822AF003E15E6 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
+		34C3415C1E2822AF003E15E6 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
+		34C3415E1E282DD0003E15E6 /* account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = account.png; path = "图片/account.png"; sourceTree = "<group>"; };
+		34C3415F1E282DD0003E15E6 /* home1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home1.png; path = "图片/home1.png"; sourceTree = "<group>"; };
+		34C341601E282DD0003E15E6 /* home142.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home142.png; path = "图片/home142.png"; sourceTree = "<group>"; };
+		34C341611E282DD0003E15E6 /* paint64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paint64.png; path = "图片/paint64.png"; sourceTree = "<group>"; };
+		34C341621E282DD0003E15E6 /* seo12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = seo12.png; path = "图片/seo12.png"; sourceTree = "<group>"; };
 		34F6D2F11E27F81F00790450 /* WSWScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSWScrollView.h; sourceTree = "<group>"; };
 		34F6D2F21E27F81F00790450 /* WSWScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSWScrollView.m; sourceTree = "<group>"; };
 		34F6D2F41E27FA1A00790450 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
@@ -226,6 +250,24 @@
 			name = XHTTP;
 			sourceTree = "<group>";
 		};
+		3429C8EF1E28696A002EA3CE /* 主题信息 */ = {
+			isa = PBXGroup;
+			children = (
+				3429C8F01E28697E002EA3CE /* Theme.h */,
+				3429C8F11E28697E002EA3CE /* Theme.m */,
+			);
+			name = "主题信息";
+			sourceTree = "<group>";
+		};
+		3429C8F31E2869F0002EA3CE /* MoreThemeController */ = {
+			isa = PBXGroup;
+			children = (
+				3429C8EC1E286902002EA3CE /* MoreThemeController.h */,
+				3429C8ED1E286902002EA3CE /* MoreThemeController.m */,
+			);
+			name = MoreThemeController;
+			sourceTree = "<group>";
+		};
 		3437DC411E21D65900B97888 /* Externsion */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +308,7 @@
 		3476B4861E0478E0003D63FC /* MyTheme */ = {
 			isa = PBXGroup;
 			children = (
+				3429C8EF1E28696A002EA3CE /* 主题信息 */,
 				3419CA3E1E248207002A9B41 /* 用户信息 */,
 				341E64F81E2422B50052885B /* XHTTP */,
 				34F7ED881E23EC4000302975 /* ThirdKit */,
@@ -376,6 +419,7 @@
 		3490FDDE1E04C2B3009AE8AC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3429C8F31E2869F0002EA3CE /* MoreThemeController */,
 				34F882641E251475009A742D /* ThemeDetailViewController */,
 				9A735CDB1E06778F007722A4 /* mainController */,
 			);
@@ -459,6 +503,7 @@
 			children = (
 				34F882651E251496009A742D /* ThemeDetailViewController.h */,
 				34F882661E251496009A742D /* ThemeDetailViewController.m */,
+				3429C8F41E286A19002EA3CE /* ThemeDetailSB.storyboard */,
 			);
 			name = ThemeDetailViewController;
 			sourceTree = "<group>";
@@ -477,6 +522,11 @@
 			isa = PBXGroup;
 			children = (
 				348F706A1E24173900CD2118 /* 图片 */,
+				34C3415E1E282DD0003E15E6 /* account.png */,
+				34C3415F1E282DD0003E15E6 /* home1.png */,
+				34C341601E282DD0003E15E6 /* home142.png */,
+				34C341611E282DD0003E15E6 /* paint64.png */,
+				34C341621E282DD0003E15E6 /* seo12.png */,
 				34F7ED7F1E23E01000302975 /* Icon-2.png */,
 				9A735CC71E067701007722A4 /* normal41@2x.png */,
 				9A735CC81E067701007722A4 /* normal41@3x.png */,
@@ -523,6 +573,10 @@
 				34F882691E25246A009A742D /* PaperImageView.m */,
 				34F8826B1E252994009A742D /* bView.h */,
 				34F8826C1E252994009A742D /* bView.m */,
+				34C341581E281BBD003E15E6 /* MenuBar.h */,
+				34C341591E281BBD003E15E6 /* MenuBar.m */,
+				34C3415B1E2822AF003E15E6 /* MenuCell.h */,
+				34C3415C1E2822AF003E15E6 /* MenuCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -687,14 +741,17 @@
 				3476B4971E0478E1003D63FC /* LaunchScreen.storyboard in Resources */,
 				9A735CDA1E067701007722A4 /* multiply@3x.png in Resources */,
 				9A735CD11E067701007722A4 /* normal41@2x.png in Resources */,
+				34C341631E282DD0003E15E6 /* account.png in Resources */,
 				348F70731E241E0200CD2118 /* data.json in Resources */,
 				9A735CC11E0676EE007722A4 /* defaultAvatar@2x.png in Resources */,
+				34C341671E282DD0003E15E6 /* seo12.png in Resources */,
 				9A735CD31E067701007722A4 /* normal1@2x.png in Resources */,
 				9A735CD71E067701007722A4 /* normal3@2x.png in Resources */,
 				34F7ED7C1E23DDA800302975 /* LoginSB.storyboard in Resources */,
 				34F7ED801E23E01000302975 /* Icon-2.png in Resources */,
 				9A735CC31E0676EE007722A4 /* toolbar-0065@2x.png in Resources */,
 				9A735CD21E067701007722A4 /* normal41@3x.png in Resources */,
+				34C341651E282DD0003E15E6 /* home142.png in Resources */,
 				9A735CC01E0676EE007722A4 /* toolbar-0480@3x.png in Resources */,
 				9A735CD61E067701007722A4 /* normal2@3x.png in Resources */,
 				9A735CD51E067701007722A4 /* normal2@2x.png in Resources */,
@@ -702,12 +759,15 @@
 				9A735CC51E0676EE007722A4 /* toolbar-0022@2x.png in Resources */,
 				348F706B1E24173900CD2118 /* 图片 in Resources */,
 				9A735CBF1E0676EE007722A4 /* toolbar-0480@2x.png in Resources */,
+				3429C8F51E286A19002EA3CE /* ThemeDetailSB.storyboard in Resources */,
 				9A735CD91E067701007722A4 /* multiply@2x.png in Resources */,
 				9A735CD41E067701007722A4 /* normal1@3x.png in Resources */,
 				9A735CC21E0676EE007722A4 /* defaultAvatar@3x.png in Resources */,
+				34C341641E282DD0003E15E6 /* home1.png in Resources */,
 				34F7ED871E23E4C000302975 /* Icon-1.png in Resources */,
 				9A735CD81E067701007722A4 /* normal3@3x.png in Resources */,
 				3476B4941E0478E1003D63FC /* Assets.xcassets in Resources */,
+				34C341661E282DD0003E15E6 /* paint64.png in Resources */,
 				34F7ED911E23F8CC00302975 /* registerSB.storyboard in Resources */,
 				34F6D2F51E27FA1A00790450 /* 1.json in Resources */,
 				9A735CC61E0676EE007722A4 /* toolbar-0022@3x.png in Resources */,
@@ -870,14 +930,18 @@
 				34F882671E251496009A742D /* ThemeDetailViewController.m in Sources */,
 				34F7ED8B1E23EC5200302975 /* XKeyBoard.m in Sources */,
 				3437DC441E21D68900B97888 /* UIView+externsion.m in Sources */,
+				34C3415A1E281BBD003E15E6 /* MenuBar.m in Sources */,
 				341E64FB1E2422D10052885B /* XHttp.m in Sources */,
+				34C3415D1E2822AF003E15E6 /* MenuCell.m in Sources */,
 				9A735CDF1E0677EF007722A4 /* rightItem.m in Sources */,
 				3437DC401E21ACC000B97888 /* normalCell.m in Sources */,
 				34FE94EF1E255337000528AD /* personViewController.m in Sources */,
+				3429C8F21E28697E002EA3CE /* Theme.m in Sources */,
 				3476B4891E0478E1003D63FC /* main.m in Sources */,
 				34F8826D1E252994009A742D /* bView.m in Sources */,
 				341E65021E2429430052885B /* NSData+externsion.m in Sources */,
 				34F7ED831E23E37200302975 /* LoginViewController.m in Sources */,
+				3429C8EE1E286902002EA3CE /* MoreThemeController.m in Sources */,
 				342AB4241E24C7A5006AEDCE /* ActivityScrollView.m in Sources */,
 				9A735CEC1E0691D0007722A4 /* avaterCell.m in Sources */,
 				34F7ED941E23FAFB00302975 /* RegisterViewController.m in Sources */,

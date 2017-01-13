@@ -122,7 +122,7 @@
     _timeInterval = 3.0;
     
     //添加滚动视图
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*0.3)];
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.pagingEnabled = YES;
     scrollView.delegate = self;
@@ -136,10 +136,10 @@
     self.scrollView = scrollView;
 
     //给滚动视图添加两个UIImageView
-    UIImageView *firstImageView = [[UIImageView alloc] initWithFrame:self.bounds];
+    UIImageView *firstImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*0.3)];
     self.firstImageView = firstImageView;
     
-    UIImageView *secondImageView = [[UIImageView alloc] initWithFrame:self.bounds];
+    UIImageView *secondImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*0.3)];
     self.secondImageView = secondImageView;
 
     [self.scrollView addSubview:secondImageView];
@@ -149,13 +149,13 @@
 
         //默认和视差,用一样的双UIImageView就可以搞定
         scrollView.contentOffset = CGPointMake(CGRectGetWidth(self.frame), 0);
-        scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.frame) * 3, CGRectGetHeight(self.frame));
+        scrollView.contentSize = CGSizeMake(SCREEN_WIDTH, 0);
         
         //    先设置第一张图片的位置,在滚动视图的正中央
         self.firstImageView.frame = CGRectMake(CGRectGetWidth(self.frame), 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
     }else{
         //第三种模式,需要3个UIImageView(最优)
-        UIImageView *thirdImageView = [[UIImageView alloc] initWithFrame:self.bounds];
+        UIImageView *thirdImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*0.3)];
         self.thirdImageView = thirdImageView;
         [self.scrollView addSubview:thirdImageView];
     }

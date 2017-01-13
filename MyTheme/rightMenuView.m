@@ -30,7 +30,7 @@
 // 初始化ui
 
 -(void)initUI{
-    self.backgroundColor = [UIColor whiteColor];
+    self.backgroundColor = [UIColor colorWithRed:91.0/255.0 green:250.0/255.0 blue:39.0/255.0 alpha:1];
     self.layer.shadowColor = [[UIColor blackColor]CGColor];
     self.layer.shadowOffset = CGSizeMake(-3, 0);
     self.layer.shadowRadius = 3;

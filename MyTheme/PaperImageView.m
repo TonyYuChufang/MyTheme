@@ -18,6 +18,7 @@
 
 -(void)initUI{
     _paperWall = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height-20)];
+    _paperWall.userInteractionEnabled = YES;
     _paperWall.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:_paperWall];
     _wallNameLabel = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMidX(_paperWall.frame)-35, CGRectGetMaxY(_paperWall.frame)+5, 70, 20)];
